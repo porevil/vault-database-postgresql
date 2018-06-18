@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: museum
+  cloud:
+    vault:
+       database:
+         enabled: true
+         role: curator
+         backend: database
+         username-property: username
+         password-property: pasword
+       host: localhost
+       port: 8200
+       scheme: http
+       uri: http://localhost:8200
+       authentication: TOKEN
+       token: 00669762-47e5-fe86-a57e-f15558e99bd4 
+       #77facb98-875d-3a02-ccf7-0d7a368ce18e
+       
+  datasource:
+    url: jdbc:postgresql://localhost:5432/museum
+    #password: A1a-63H6dGvK1rk2Ugaj
+    #username: v-root-my-role-w35LqIDNyhuD1WsY4aEb-1529160421
+    
+    #url: jdbc:postgresql://localhost:5432/museum    
+       
+       
